@@ -8,13 +8,13 @@
   "start_url": "./",
   "icons": [
     {
-      "src": "",
+      "src": "./",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "",
+      "src": "./",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable any"

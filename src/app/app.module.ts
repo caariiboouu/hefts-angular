@@ -7,6 +7,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { TranslateModule } from '@ngx-translate/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 import { environment } from '@env/environment';
 import { RouteReusableStrategy, ApiPrefixInterceptor, ErrorHandlerInterceptor, SharedModule } from 'src/app/@shared';
 import { AuthModule } from 'src/app/auth';
@@ -32,6 +34,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AboutModule,
     AuthModule,
     AppRoutingModule,
+    MDBBootstrapModule.forRoot(),
     BrowserAnimationsModule, // must be imported as the last module as it contains the fallback route
   ],
   declarations: [AppComponent],

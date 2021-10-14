@@ -22,6 +22,10 @@
   border-left: 4px solid theme-color("danger");
 }
 
+.logo {
+  max-width: 15rem;
+}
+
 @include media-breakpoint-down(xs) {
   .container {
     width: 100%;

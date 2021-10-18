@@ -7,7 +7,10 @@ header {
 }
 
 .navbar {
-  margin-bottom: $spacer;
+  margin-bottom: 0;
+  width: 90vw;
+  max-width: 75rem;
+  margin: auto;
 }
 
 .nav-link.dropdown-toggle {
@@ -20,4 +23,9 @@ header {
 
 .fullwidthnav {
   width: 100%;
+}
+
+#user-dropdown {
+  flex: 0 1 100%;
+  text-align: right;
 }

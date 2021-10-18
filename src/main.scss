@@ -15,3 +15,12 @@
 
 // Theme customization
 @import "theme/theme";
+
+.mat-form-field {
+  float: left;
+  width: 100%;
+}
+
+.container {
+  max-width: initial !important;
+}

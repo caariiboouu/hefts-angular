@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouteReuseStrategy, RouterModule } from '@angular/router';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
@@ -18,6 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     BrowserModule,
     ServiceWorkerModule.register('./ngsw-worker.js', { enabled: environment.production }),

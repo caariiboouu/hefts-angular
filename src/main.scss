@@ -24,3 +24,14 @@
 .container {
   max-width: initial !important;
 }
+
+.mat-card {
+  text-align: left;
+  border-radius: 0.1rem !important;
+  margin-bottom: 1rem;
+}
+
+.cardlistitem {
+  border-bottom: 1px solid #d1d1d1;
+  margin-bottom: 0.7rem;
+}

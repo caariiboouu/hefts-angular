@@ -13,6 +13,9 @@ import { AuthModule } from 'src/app/auth';
 import { HomeModule } from './home/home.module';
 import { ShellModule } from './shell/shell.module';
 import { AboutModule } from './about/about.module';
+import { SearchModule } from './search/search.module';
+import { AddNewFileModule } from './addnewfile/addnewfile.module';
+import { ReportsModule } from './reports/reports.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -31,6 +34,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ShellModule,
     HomeModule,
     AboutModule,
+    SearchModule,
+    AddNewFileModule,
+    ReportsModule,
     AuthModule,
     AppRoutingModule,
     BrowserAnimationsModule, // must be imported as the last module as it contains the fallback route

@@ -14,17 +14,13 @@
       </button> -->
       <div class="fullwidthnav">
         <div id="navbar-menu">
-          <div class="navbar-nav mr-auto">
-            <h1>File Tracking System</h1>
-          </div>
-          <div class="navbar-nav ml-auto">
-            <div class="nav-item" ngbDropdown>
-              <a id="user-dropdown" class="nav-link" ngbDropdownToggle>
-                <b>{{ username }}</b>
-              </a>
-              <div ngbDropdownMenu aria-labelledby="user-dropdown" class="dropdown-menu dropdown-menu-right">
-                <button class="dropdown-item" (click)="logout()" translate>Logout</button>
-              </div>
+          <div class="nav-item" ngbDropdown>
+            <h1 id="maintitle">File Tracking System</h1>
+            <a id="user-dropdown" class="nav-link" ngbDropdownToggle>
+              <b>{{ username }}</b>
+            </a>
+            <div ngbDropdownMenu aria-labelledby="user-dropdown" class="dropdown-menu dropdown-menu-right">
+              <button class="dropdown-item" (click)="logout()" translate>Logout</button>
             </div>
           </div>
         </div>

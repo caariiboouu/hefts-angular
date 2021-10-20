@@ -13,6 +13,15 @@ header {
   margin: auto;
 }
 
+.navbar > .container-fluid {
+  align-items: flex-end;
+}
+
+.nav-item .dropdown-menu {
+  right: 0;
+  text-align: right;
+}
+
 .nav-link.dropdown-toggle {
   cursor: pointer;
 }

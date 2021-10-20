@@ -1,0 +1,19 @@
+<svg id="Move_Icon" data-name="Move Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_46" data-name="Path 46" d="M12.684-3.735c-.528,0-.527.366-.527.894v-.407A2.2,2.2,0,0,1,9.98-1.071H3.248A2.342,2.342,0,0,1,1.071-3.248v-14.5a2.342,2.342,0,0,1,2.178-2.178H9.98a2.2,2.2,0,0,1,2.178,2.178v-.225c0,.528,0,1.017.527,1.017s.544-.489.544-1.017v.225A3.248,3.248,0,0,0,9.98-21H3.248A3.248,3.248,0,0,0,0-17.752v14.5A3.248,3.248,0,0,0,3.248,0H9.98a3.248,3.248,0,0,0,3.248-3.248v.407C13.228-3.369,13.212-3.735,12.684-3.735Z" fill="#245b77"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Path_48" data-name="Path 48" d="M16.172-15.319a.955.955,0,0,0-.7-.217.955.955,0,0,0-.648.342.955.955,0,0,0-.222.7.955.955,0,0,0,.337.65L17.9-11.373H6a.955.955,0,0,0-.955.955A.955.955,0,0,0,6-9.462H17.921L14.949-7a.957.957,0,0,0-.124,1.347.957.957,0,0,0,1.347.124l4.1-3.382a1.911,1.911,0,0,0,.7-1.481,1.911,1.911,0,0,0-.7-1.481Z" fill="#245b77"/>
+    </clipPath>
+  </defs>
+  <rect id="Boundary" width="25" height="25" fill="none"/>
+  <g id="Icon" transform="translate(2 23)">
+    <g id="Group_43" data-name="Group 43" clip-path="url(#clip-path)">
+      <path id="Path_45" data-name="Path 45" d="M-1-22H14.228V1H-1Z" fill="#245b77"/>
+    </g>
+    <g id="Group_44" data-name="Group 44" clip-path="url(#clip-path-2)">
+      <path id="Path_47" data-name="Path 47" d="M4.04-16.559H21.974V-4.188H4.04Z" fill="#245b77"/>
+    </g>
+  </g>
+</svg>

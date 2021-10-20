@@ -16,9 +16,18 @@
 // Theme customization
 @import "theme/theme";
 
-.mat-form-field {
-  float: left;
-  width: 100%;
+h1 {
+  color: #335974;
+}
+
+.row:not(.no-gutters) {
+  margin-right: -$grid-gutter-width / 8;
+  margin-left: -$grid-gutter-width / 8;
+}
+.row:not(.no-gutters) > .col,
+.row:not(.no-gutters) > [class*="col-"] {
+  padding-right: $grid-gutter-width / 8;
+  padding-left: $grid-gutter-width / 8;
 }
 
 .container {
@@ -30,10 +39,13 @@
   border-radius: 0.1rem !important;
   margin-bottom: 1rem;
 }
-
 .cardlistitem {
   border-bottom: 1px solid #d1d1d1;
   margin-bottom: 0.7rem;
+}
+.mat-form-field {
+  float: left;
+  width: 100%;
 }
 
 #maintitle {

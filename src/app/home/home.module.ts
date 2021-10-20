@@ -9,6 +9,7 @@ import { HomeComponent } from './home.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   imports: [
@@ -19,6 +20,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatCardModule,
     MatInputModule,
     MatButtonModule,
+    MatSelectModule,
   ],
   declarations: [HomeComponent],
 })

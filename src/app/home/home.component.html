@@ -48,25 +48,57 @@
                 <div class="row">
                   <div class="col-12">
                     <mat-form-field appearance="outline">
-                      <mat-label>Outline form field</mat-label>
+                      <mat-label>Client Name</mat-label>
                       <input matInput placeholder="Placeholder" />
-                      <mat-hint>Hint</mat-hint>
+                      <mat-hint>Enter Client Name</mat-hint>
                     </mat-form-field>
                     <mat-form-field appearance="outline">
-                      <mat-label>Outline form field</mat-label>
+                      <mat-label>Client Alternate Name</mat-label>
                       <input matInput placeholder="Placeholder" />
-                      <mat-hint>Hint</mat-hint>
+                      <mat-hint>Enter Client Alternate Name</mat-hint>
                     </mat-form-field>
                     <mat-form-field appearance="outline">
-                      <mat-label>Outline form field</mat-label>
+                      <mat-label>Matter Name</mat-label>
                       <input matInput placeholder="Placeholder" />
-                      <mat-hint>Hint</mat-hint>
+                      <mat-hint>Enter Matter Name</mat-hint>
                     </mat-form-field>
+                  </div>
+                  <div class="col-12">
                     <h4>Client Address</h4>
                     <mat-form-field appearance="outline">
-                      <mat-label>Outline form field</mat-label>
+                      <mat-label>Address 1</mat-label>
                       <input matInput placeholder="Placeholder" />
-                      <mat-hint>Hint</mat-hint>
+                      <mat-hint>Enter Address 1</mat-hint>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                      <mat-label>Address 2</mat-label>
+                      <input matInput placeholder="Placeholder" />
+                      <mat-hint>Enter Address 2</mat-hint>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-6">
+                    <mat-form-field appearance="outline">
+                      <mat-label>City</mat-label>
+                      <input matInput placeholder="Placeholder" />
+                      <mat-hint>Enter City</mat-hint>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-3">
+                    <mat-form-field appearance="outline">
+                      <mat-label>State</mat-label>
+                      <mat-select>
+                        <mat-option *ngFor="let state of usstates" [value]="state.value">
+                          {{ state.viewValue }}
+                        </mat-option>
+                      </mat-select>
+                      <mat-hint>Select State</mat-hint>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-3">
+                    <mat-form-field appearance="outline">
+                      <mat-label>Zip</mat-label>
+                      <input matInput placeholder="Placeholder" />
+                      <mat-hint>Enter Zip</mat-hint>
                     </mat-form-field>
                   </div>
                 </div>

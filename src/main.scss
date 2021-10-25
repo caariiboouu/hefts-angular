@@ -40,7 +40,8 @@ h4 {
 .mat-card {
   text-align: left;
   border-radius: 0.1rem !important;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
+  margin-right: 0.3rem;
 }
 .cardlistitem {
   border-bottom: 1px solid #d1d1d1;
@@ -49,6 +50,17 @@ h4 {
 .cardlistitem:nth-last-child(1) {
   border-bottom: none;
 }
+.cardlistitem .row {
+  align-items: center;
+}
+.cardlistitem h3 {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.cardlistitem .mat-typography p {
+  margin: 0;
+}
+
 .mat-form-field {
   float: left;
   width: 100%;
@@ -72,4 +84,14 @@ h4 {
 .xng-breadcrumb-trail {
   text-transform: capitalize;
   margin-bottom: 1rem;
+}
+
+.fullwidthbutton {
+  width: 100%;
+}
+.mat-button,
+.mat-icon-button,
+.mat-stroked-button,
+.mat-flat-button {
+  border-radius: 0.5rem !important;
 }

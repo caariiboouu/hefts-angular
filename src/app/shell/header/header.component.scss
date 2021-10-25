@@ -39,6 +39,28 @@ header {
   text-align: right;
 }
 
+.nav-link {
+  font-weight: bold;
+  color: #335974 !important;
+}
+.nav-link img {
+  filter: brightness(0) saturate(100%) invert(30%) sepia(68%) saturate(344%) hue-rotate(162deg) brightness(89%)
+    contrast(92%);
+}
+.nav-link.active {
+  color: #b5c974 !important;
+}
+.nav-link.active img {
+  filter: brightness(0) saturate(100%) invert(92%) sepia(3%) saturate(6383%) hue-rotate(21deg) brightness(104%)
+    contrast(59%);
+}
+.nav-link:hover {
+  color: #68a9d5 !important;
+}
+.nav-link:hover img {
+  filter: brightness(0) saturate(100%) invert(63%) sepia(50%) saturate(379%) hue-rotate(161deg) brightness(90%)
+    contrast(90%);
+}
 .nav-link.dropdown-toggle {
   cursor: pointer;
 }
@@ -55,4 +77,9 @@ header {
 #user-dropdown {
   flex: 0 1 100%;
   text-align: right;
+}
+
+.navicons {
+  max-width: 1rem;
+  width: 100%;
 }

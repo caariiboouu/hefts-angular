@@ -6,6 +6,10 @@ interface UsStates {
   value: string;
   viewValue: string;
 }
+interface HeEmployees {
+  value: string;
+  viewValue: string;
+}
 
 @Component({
   selector: 'app-addnewfile',
@@ -17,6 +21,11 @@ export class AddNewFileComponent implements OnInit {
     { value: 'ok-0', viewValue: 'Oklahoma' },
     { value: 'ut-1', viewValue: 'Utah' },
     { value: 'tx-2', viewValue: 'Texas' },
+  ];
+
+  heemployees: HeEmployees[] = [
+    { value: '1', viewValue: 'Yes' },
+    { value: '0', viewValue: 'No' },
   ];
 
   version: string | null = environment.version;

@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-12">
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 addnewfilebox">
               <mat-card>
                 <mat-card-title> Add New File </mat-card-title>
                 <div class="row">
@@ -153,19 +153,205 @@
                   <div class="col-4">
                     <div class="row">
                       <div class="col-12"><h4>Central Files Information</h4></div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>File Name</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Folder Request</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
                       <div class="col-12">
                         <mat-form-field appearance="outline">
-                          <mat-label>Client</mat-label>
+                          <mat-label>Adverse Parties</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-12">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Interested Parties</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-12">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Cross Reference Information</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-12">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Additional Information</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12"><h4>Billing Information</h4></div>
+                      <div class="col-12">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Billing Attorney Name</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12"><h4>Billing Office Location</h4></div>
+                      <div class="col-12">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Address 1</mat-label>
                           <input matInput placeholder="" />
                           <mat-hint></mat-hint>
                         </mat-form-field>
                         <mat-form-field appearance="outline">
-                          <mat-label>Client Alternate Name</mat-label>
+                          <mat-label>Address 2</mat-label>
                           <input matInput placeholder="" />
                           <mat-hint></mat-hint>
                         </mat-form-field>
+                      </div>
+                      <div class="col-6">
                         <mat-form-field appearance="outline">
-                          <mat-label>Matter Name</mat-label>
+                          <mat-label>City</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-3">
+                        <mat-form-field appearance="outline">
+                          <mat-label>State</mat-label>
+                          <mat-select>
+                            <mat-option *ngFor="let state of usstates" [value]="state.value">
+                              {{ state.viewValue }}
+                            </mat-option>
+                          </mat-select>
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-3">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Zip</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Responsible Attorney Name</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Originating Attorney Name</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Referred By</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Approved By</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-12">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Area of Law</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Billing Number Needed</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Bill Level</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-12">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Type of Matter</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Fee Arrangement</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Amount</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-12">
+                        <mat-form-field appearance="outline">
+                          <mat-label>New Client</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>If Existing Client - Client ID</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Hall Estill Employee</mat-label>
+                          <mat-select>
+                            <mat-option *ngFor="let employee of heemployees" [value]="employee.value">
+                              {{ employee.viewValue }}
+                            </mat-option>
+                          </mat-select>
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-12">
+                        <mat-form-field appearance="outline">
+                          <mat-label>If New Client, Please Complete</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-12">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Special Billing Instructions</mat-label>
                           <input matInput placeholder="" />
                           <mat-hint></mat-hint>
                         </mat-form-field>
@@ -173,7 +359,206 @@
                     </div>
                   </div>
 
-                  <div class="col-4"></div>
+                  <div class="col-4">
+                    <div class="row">
+                      <div class="col-12"><h4>Opposing Counsel Information</h4></div>
+                      <div class="col-12">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Opposing Counsel Name</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12"><h4>Opposing Counsel Address</h4></div>
+                      <div class="col-12">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Address 1</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                        <mat-form-field appearance="outline">
+                          <mat-label>Address 2</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>City</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-3">
+                        <mat-form-field appearance="outline">
+                          <mat-label>State</mat-label>
+                          <mat-select>
+                            <mat-option *ngFor="let state of usstates" [value]="state.value">
+                              {{ state.viewValue }}
+                            </mat-option>
+                          </mat-select>
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-3">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Zip</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12"><h4>Co-Counsel Information</h4></div>
+                      <div class="col-12">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Co-Counsel Name</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12"><h4>Co-Counsel Address</h4></div>
+                      <div class="col-12">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Opposing Counsel Name</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-12">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Address 1</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                        <mat-form-field appearance="outline">
+                          <mat-label>Address 2</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>City</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-3">
+                        <mat-form-field appearance="outline">
+                          <mat-label>State</mat-label>
+                          <mat-select>
+                            <mat-option *ngFor="let state of usstates" [value]="state.value">
+                              {{ state.viewValue }}
+                            </mat-option>
+                          </mat-select>
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-3">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Zip</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12"><h4>Additional Information</h4></div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Document Number</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>File Number</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>File Name</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Box Number</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-8">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Other Parties</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-4">
+                        <button mat-stroked-button color="primary">Paste List</button>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12"><h4>Stored Client Matter Record</h4></div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Document Number</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>File Number</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>File Name</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-6">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Box Number</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-12">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Attorney Name</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-12">
+                        <mat-form-field appearance="outline">
+                          <mat-label>Notes</mat-label>
+                          <input matInput placeholder="" />
+                          <mat-hint></mat-hint>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </mat-card>
             </div>
